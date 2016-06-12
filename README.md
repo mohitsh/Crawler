@@ -1,5 +1,5 @@
 # StockCodes
-This project scraps and stores price and volume data from yahoo finance during market's woking time for 259 stocks listed at NSE
+This project scraps and stores price and volume data from yahoo finance during market's working time for 259 stocks listed on NSE
 
 Scripts follow this sequence.
 * divideDF.py
