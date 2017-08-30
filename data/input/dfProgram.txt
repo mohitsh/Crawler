@@ -1,5 +1,3 @@
-#!/root/anaconda3/bin/python3 
-
 from bs4 import BeautifulSoup,SoupStrainer 
 import requests,csv 
 from datetime import datetime 

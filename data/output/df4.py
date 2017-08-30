@@ -1,5 +1,3 @@
-#!/root/anaconda3/bin/python3 
-
 from bs4 import BeautifulSoup,SoupStrainer 
 import requests,csv 
 from datetime import datetime 
@@ -10,7 +8,7 @@ import threading
 import re 
 import signal 
 df=pd.DataFrame() 
-data1=pd.read_csv('df3.csv') 
+data1=pd.read_csv('df9.csv') 
 data=data1['Ticker'] 
 df1Price=pd.DataFrame(columns=data) 
 df1Price['time']='' 
@@ -41,7 +39,7 @@ def foo():
 	a.append(ctime) 
 	ps=pd.Series(a,index=df1Price.columns) 
 	df1Price=df1Price.append(ps,ignore_index=True) 
-	df1Price.to_csv('df3Price.csv') 
+	df1Price.to_csv('df9Price.csv') 
 
 signal.signal(signal.SIGALRM,handler) 
 signal.alarm(300) 
