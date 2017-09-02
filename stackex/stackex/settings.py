@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for yf_crawler project
+# Scrapy settings for stackex project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'yf_crawler'
+BOT_NAME = 'stackex'
 
-SPIDER_MODULES = ['yf_crawler.spiders']
-NEWSPIDER_MODULE = 'yf_crawler.spiders'
+SPIDER_MODULES = ['stackex.spiders']
+NEWSPIDER_MODULE = 'stackex.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'yf_crawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'stackex (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'yf_crawler.middlewares.MyCustomSpiderMiddleware': 543,
+#    'stackex.middlewares.StackexSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'yf_crawler.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'stackex.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'yf_crawler.pipelines.SomePipeline': 300,
+#    'stackex.pipelines.StackexPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
